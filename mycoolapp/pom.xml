@@ -16,10 +16,25 @@
 	<properties>
 		<java.version>17</java.version>
 	</properties>
+
+<!--dependencies here -->
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+<!--			<version></version> optional- best practice to add for devops purpose  this will inherit from parent-->
+		</dependency>
+
+<!--		for automatic build and run-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+		</dependency>
+
+<!--		adding actuator -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
 
 		<dependency>
@@ -29,6 +44,7 @@
 		</dependency>
 	</dependencies>
 
+<!--	plugIn-->
 	<build>
 		<plugins>
 			<plugin>
